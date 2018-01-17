@@ -1,0 +1,42 @@
+bonus graphique :
+	historique
+	unicode (utf8)
+	completion dynamique sur les commandes
+	prompt dynamique (setenv PS1 prompt)
+	le tout sans utiliser ncurse ni termcaps
+	ctr+k			=	couper
+	ctr+y			=	coller
+	ctr+a			=	debut de ligne
+	ctr+e			=	fin de ligne
+	ctr+t			=	inverse le caractere courant et le precedant
+	ctr+q			=	supprime le mots courant
+	ctr+w			=	supprime le chemin courant
+	ctr+u			=	coupe tout
+	ctr+i			=	autocompletion sur la suite de caractere depuit le dernier espace jusqu'au curseur (non inclue)
+	ctr+d			=	coupe le caractere courant
+	ctr+f			=	avance d'un caractere
+	ctr+h			=	coupe le caractere courant et recule de curseur
+	ctr+j			=	execute la ligne de commande
+	ctr+l			=	clear le screen
+	ctr+b			=	bouge le curseur vers la gauche
+	ctr+n			=	remonte dans l'historique
+	ctr+p			=	descend dans l'historique
+	shift+droite	=	mot suivant
+	shift+gauche	=	mot precedent
+	home			=	debut de ligne
+	end				=	fin de ligne
+
+bonus de parsing :
+	gestion inteligente des espaces (ls|ls , ls | ls , ls 3> toto , ls 3>toto;ls|cat -e>rt, etc...)
+	redirection d'un file descripteur dans un autre (>&)
+	Heredoc (<<)
+	le '&' est gere comme un ';'
+	l'echapement des caracteres (", ', \)
+	globing (glob)
+	variable global ($PATH ou $USER)
+	variable dynamique ($RANDOM par exemple)
+
+bonus d'execution :
+	env minimal generer si aucun env au depart (active par defaut, desactivable avec l'option -r -rebuildenv)
+	option du shell visible avec -h
+

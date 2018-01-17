@@ -1,0 +1,15 @@
+pour se rejoindre
+	le master gueule un truc dans le broadcast
+	les slaves recevaient le message, checkait que c'etait le bon, et apres s'orienter en fonction du son
+	1 2 et 8 veulent dire tout droit, ensuite 5 6 7 veut dire tourne a droite, 3 et 4 tourne a gauche
+
+
+ce que ""fait"" l'ia
+	quand elle arrive sur le serv elle pond, ensuite elle rejoint le master en ramassant tout sur son passage, dans la limite ou ca reste pas debile
+
+il y a trois familles de fonction
+	=> ramasser les differents objets (j'avais coller un pointeur sur fonction)
+	=> poser les differents objets.
+	=> savoir quand on a recu un msg, et reagir en fonction (BONJOUR je donne ma team, le reste je m'en fou sauf le "Master" qui connecte des ia et les broadcast
+
+quand j'arrive voir mon inventaire, histoire de drop tout rapidement en commencant par le plus demande et de pas avoir dix milles ko retourner par le serv

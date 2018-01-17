@@ -1,0 +1,17 @@
+Fonction autorisees pour la partie obligatoire :
+		 Toute la section 2 des mans
+		 Toutes les fonctions de la bibliothèque termcaps
+		 closedir
+		 exit
+		 free
+		 getcwd
+		 getenv
+		 isatty
+		 malloc
+		 opendir
+		 readdir
+		 signal
+		 stat
+		 ttyname
+		 ttyslot
+Pour les bonus il faudra juste les justifies :)

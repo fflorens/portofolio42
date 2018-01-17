@@ -1,0 +1,6 @@
+glob && globfree (bonus sh_globalize()) / transformation de pattern *, ? en liste
+
+getpwnam (bonus sh_expanduser()) / transformation de ~, ~user en homepath
+getpwuid_r &* getguid_r (bonus sh_rebuildenv, reconstruction env minimal)
+
+tcgetattr && tcsetattr (bonus gestion de ligne nboon) / vt100

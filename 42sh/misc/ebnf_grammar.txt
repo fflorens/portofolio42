@@ -1,0 +1,189 @@
+	STRING = 1,		// char
+	OR,				// ||
+	AND,			// &&
+	IN,				// <
+	OUT,			// >
+	PIPE,			// |
+	IN_FD,			// <&
+	OUT_FD,			// >&
+	OUT_ADD,		// >>
+	HEREDOC,		// <<
+	SEMICOLON,		// ;
+	AMPER,			// &
+	T_NULL,			// aucun des autres (utiliser pas le lexer uniquement)
+	EOL				// end of line
+
+
+# Notation EBNF paradygme parser
+
+<line>           ::= <commandlist> EOL
+<commandList>    ::= <command> <commandList>
+
+<operator>       ::= AND
+<operator>       ::= OR
+
+<operatorOrEOL>  ::= <operator>
+<operatorOrEOL>  ::= EOL
+
+
+
+
+<command>      ::= <pipeline> <operator>
+
+<line>         ::= <line> <line>
+<line>         ::= <command>
+
+<command>      ::=  
+
+
+<line>         ::= <command> SEMICOLON <command>
+<line>         ::= <command> AMPER <command>
+
+<command>      ::= <pipeline>
+<command>      ::= <pipeline> 
+
+
+
+<command>      ::= <pipeline> { 't_operator' <pipeline> }
+<pipeline>     ::= <
+
+
+
+<redirector>   ::= IN
+<redirector>   ::= OUT
+<redirector>   ::= IN_FD
+<redirector>   ::= OUT_FD
+<redirector>   ::= OUT_ADD
+<redirector>   ::= HEREDOC
+
+zero ou PLUS redirecteur
+UN ou PLUS string
+pas d ordre
+
+
+<set>          ::= STRING
+<set>          ::= <redirector>
+<set>          ::= <set> <set>
+
+<process>      ::= STRING
+<process>      ::= <set> STRING
+<process>      ::= STRING <set>
+<process>      ::= <set> STRING <set>
+
+<test>         ::= STRING
+<test>         ::= <test> <redirector>
+
+<process>      ::= <string>
+
+
+
+
+'t_operator'   ::= ( "||" | "&&" )
+
+
+
+# Notation EBNF brute
+
+<line>              ::= <command> { ( "&" | ";" ) <command> }
+<command>           ::= <pipeline> { <operator> <pipeline> }
+<operator>          ::= ( '||' | '&&' )
+<pipeline>          ::= <process> { '|' <process> }
+<process>           ::= { <redirector> } <argument> { ( <argument> | <redirector> ) }
+<argument>          ::= <string>
+<redirector>        ::= ( <heredoc> | <redir_in> | <redir_out> | <redir_out_d> )
+<string>            ::= ( <char> | <quotstr> | <dquotstr> ) { <string> }
+<quotstr>           ::= "'" { <escchar> | ? any ascii char ? - "'" } "'"
+<dquotstr>          ::= '"' { <escchar> | ? any ascii char ? - '"' } '"'
+<char>              ::= ( ( ? any ascii char ? - ( '"' | "'" | '\' | '&' | '|' | ';' ) ) | <escchar> )
+<escchar>           ::= '\' ? any ascii char ?
+<heredoc>           ::= [fd] ~ << <string>
+<redir_in>          ::= [fd] ~ < [ '&' ] <string>
+<redir_out>         ::= [fd] ~ > [ '&' ] <string>
+<redir_out_d>       ::= [fd] ~ >> <string>
+<fd>                ::= <digit> { <digit> }
+<digit>             ::= '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9'
+
+# Token interne au lexer
+
+<et>                ::= "&"
+<pipe>              ::= '|'
+<quote>             ::= "'"
+<dquote>            ::= '"'
+<p-v>               ::= ';'
+<echap>             ::= '\'
+<in>                ::= [digit]<
+<in_fd>             ::= [digit]<&
+<out>               ::= [digit]>
+<out_fd>            ::= [digit]>&
+<digit>             ::= '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9'
+<char>              ::= ? any ascii char sauf precedant ?
+
+
+
+
+
+
+# Token de sortie du lexer
+
+'<<'   -> "fd" / "string"
+'>>'   -> "fd" / "string"
+'<'    -> "fd" / "string"
+'<&'   -> "fd" / "fd"
+'>'    -> "fd" / "string"
+'>&'   -> "fd" / "fd"
+'&'    -> NULL / NULL
+'||'   -> NULL / NULL
+'&&'   -> NULL / NULL
+';'    -> NULL / NULL
+'|'    -> NULL / NULL
+'EOL'  -> NULL / NULL
+<char> -> NULL / "string"
+
+### Lexer output examples:
+
+# ls >/dev/null -l -a / || cat 2 > out&&cat -e<<EOF;ls ~
+<type>		<fd>	<value>			<label>
+STRING		NULL	"ls"			"string"
+OUT			"1"		"/dev/null"		">"
+STRING		NULL	"-l"			"string"
+STRING		NULL	"-a"			"string"
+STRING		NULL	"/"				"string"
+OR			NULL	NULL			"||"
+STRING		NULL	"cat"			"string"
+STRING		NULL	"2"				"string"
+OUT			"1"		"out"			">"
+AND			NULL	NULL			"&&"
+STRING		NULL	"cat"			"string"
+STRING		NULL	"-e"			"string"
+HEREDOC		"0"		"EOF"			"<<"
+SEMICOLON	NULL	NULL			";"
+STRING		NULL	"ls"			"string"
+STRING		NULL	"~"				"string"
+
+# ls >/dev/null -l -a / || cat 2> out&&cat -e<<EOF;ls ~
+<type>		<fd>	<value>			<label>
+STRING		NULL	"ls"			"string"
+OUT			"1"		"/dev/null"		">"
+STRING		NULL	"-l"			"string"
+STRING		NULL	"-a"			"string"
+STRING		NULL	"/"				"string"
+OR			NULL	NULL			"||"
+STRING		NULL	"cat"			"string"
+OUT			"2"		"out"			">"
+AND			NULL	NULL			"&&"
+STRING		NULL	"cat"			"string"
+STRING		NULL	"-e"			"string"
+HEREDOC		"0"		"EOF"			"<<"
+SEMICOLON	NULL	NULL			";"
+STRING		NULL	"ls"			"string"
+STRING		NULL	"~"				"string"
+
+
+IN,				// <
+IN_FD,			// <&
+
+OUT,			// >
+OUT_FD,			// >&
+OUT_ADD,		// >>
+
+HEREDOC,		// <<
