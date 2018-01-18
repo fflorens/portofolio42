@@ -1,0 +1,9 @@
+#!/bin/bash
+echo Test Colleen.py
+diff <(python3 Colleen.py) Colleen.py && echo Ok || echo Fail
+echo Test Grace.py
+python3 Grace.py
+diff Grace.py Grace_kid.py && echo Ok || echo Fail
+echo Test Sully.py
+python3 Sully.py
+for i in {5..0} ; do diff Sully.py Sully_${i}.py ; test `diff Sully.py Sully_${i}.py | wc -l | tr -d ' '` -eq 4 && echo Ok || echo Fail; done
