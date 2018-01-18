@@ -9,12 +9,9 @@ Ce premier pas en entreprise est un passage important de votre cursus 42. Ce sta
 
 
 ## Objectives 
-
-Integration en entreprise
-Adaptation
-Relationnel
-Contraintes de production
-
+⋅⋅*Integration en entreprise
+⋅⋅*Adaptation
+⋅⋅*Relationnel
+⋅⋅*Contraintes de production
 ## Skills
-
-Company experience
+⋅⋅*Company experience
