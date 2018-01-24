@@ -1,15 +1,17 @@
 # 42sh
 
+Also available in [French](Readme.fr.md)
+
 ## Note: 125/100
 
 ## Description
 
-Ce projet consiste à créer de toutes pièces un shell complet, en reprenant le travail effectué sur votre 21sh. Un jeu minimum de fonctionnalités vous sont demandées, à partir duquel vous allez constuire votre propre shell abouti - en allant potentiellement jusqu'au job control et au shell script. Ce projet vous permet donc de voir ou revoir une très large palette des fonctionnalités UNIX (et POSIX) standard.
+This project goal is to create from scratch a complete shell, based on the work realized on previous project. A minimum set of functionality are asked, from which you will build your shell, possibly a full featured one with shell scripting and job control. This project allows you to learn and dive into UNIX (and POSIX) standard functionalities.
 
 ## Objectives
-⋅⋅*Gestion des processus et de leurs interactions 
-⋅⋅*Gestion de la ligne de commande et du terminal 
-⋅⋅*Parsing avancé 
+⋅⋅*Processus management and interactions 
+⋅⋅*Commandline and terminal management 
+⋅⋅*Advanced parsing
 ⋅⋅*Filesystem 
 ## Skills
 ⋅⋅*Organization 

@@ -1,15 +1,17 @@
 # Libft
 
+Also available in [French](Readme.fr.md)
+
 ## Note: 107/100
 
 ## Description
 
-Ce premier projet en tant qu'étudiant de 42 va vous faire consolider vos acquis de piscine. Vous allez recoder un certain nombre de fonctions de la librairie C standard, ainsi que d'autres fonctions utilitaires que vous réutiliserez tout au long de votre cursus.
+Strengthen your skills learned during the C Piscine by recoding functions from the standard C library and other very useful functions. You'll be able to use these functions again and again throughout the curriculum.
 
 ## Objectives
-⋅⋅*Bases de C 
+⋅⋅*C Basic
 ⋅⋅*Libc 
-⋅⋅*Génération d'une libraire statique 
+⋅⋅*Static library generation
 ## Skills
 ⋅⋅*Imperative programming 
 ⋅⋅*Rigor 

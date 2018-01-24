@@ -1,7 +1,9 @@
 # Portofolio 42
 
-Ce repo git contient la plupart de mes projets de 42, avec les descriptions des projets tel que sur l'intra, ainsi que la note obtenu.
+Also available in [French](Readme.fr.md)
 
-Une note superieur a 100 indique que le projet contenait des bonus (fonctionalites supplementaires par rapport a la partie obligatoire du projet).
+This git repository contains most of my 42-school projects, with the descriptions available on the intranet.
 
-Certains projets (42sh, corewar, zappy) ont ete realise en groupe, dans ce cas leur login est inscrit ainsi que le mien dans le fichier 'auteur'.
+A grade higher than 100 indicates that it contained bonuses (additional functionality rearding the mendatory part)
+
+Sone projects (42sh, coreware, zappy) were made with a team, in which case the logins of my teammates and mine are in the file 'auteur'.

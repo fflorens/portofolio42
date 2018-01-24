@@ -1,16 +1,18 @@
 #FdF
 
+Also available in [French](Readme.fr.md)
+
 ## Note: 95/100
 
 ## Description
 
-Tous les programmes que vous avez écris jusqu'à maintenant s'exécutaient uniquement en mode texte dans votre terminal. Découvrons maintenant quelque chose de plus excitant : comment ouvrir une fenêtre graphique et dessiner dedans ? Pour commencer votre voyage au pays de la programmation graphique, FdF vous propose de représenter le maillage en "fils de fer" d'un terrain en 3D.
+Every programs you wrote until now were executing in text mode within your terminal. Let's discover something more interesting: how to open a graphic window and draw inside ? As a way to start your journey to graphic programming land, Fdf offers you to draw the wireframe of a 3D landscape.
 
 ## Objectives
-⋅⋅*Bibliothèque graphique simple 
-⋅⋅*Tracé de segments 
-⋅⋅*Évènements 
-⋅⋅*Projection 3D vers 2D 
+⋅⋅*Simple graphic library 
+⋅⋅*Segments plotting 
+⋅⋅*Events 
+⋅⋅*3D to 2D projection 
 ## Skills
 ⋅⋅*Rigor 
 ⋅⋅*Algorithms & AI 

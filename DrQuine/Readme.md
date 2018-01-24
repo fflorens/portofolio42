@@ -1,13 +1,15 @@
 # Dr Quine
 
+Also available in [French](Readme.fr.md)
+
 ## Note: /100
 
 ## Description
 
-Ce petit projet d'algo vous permet d'aborder les problématiques de l'auto-réplication, et vous confronte au théorème de récursion de Kleene !
+This small algorithmic project allows you to approach the problematics of self-replication, et confronts you with Kleene recusion theorem !
 
 ## Objectives
-⋅⋅*Autoréplication 
+⋅⋅*Self-Replication
 ⋅⋅*Recursion 
 ## Skills
 ⋅⋅*Unix 

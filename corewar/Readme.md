@@ -1,16 +1,18 @@
 # Corewar
 
+Also available in [French](Readme.fr.md)
+
 ## Note: 125/100
 
 ## Description
 
-Ce projet vous invite à créer une arène virtuelle et à y faire s’affronter des programmes codés dans un langage simpliste. Vous allez ainsi aborder la conception d’une VM (avec les instructions qu’elle reconnait, les registres, etc), et les problématiques de compilation d’un langage assembleur en bytecode. Avec, en bonus, le plaisir de faire s’affronter vos champions sur votre arène !
+This project goal is to create a virtual arena, where programs written in a simplistic language will battle each other. You will approach the design of a VM (with instruction she can handle, the register, etc), and the issues related to compiling an assembly language in bytecode. With, as a bonus, the pleasure of seeing your champions compete in your arena !
 
 ## Objectives
 ⋅⋅*Compilation 
-⋅⋅*Machine virtuelle simpliste 
-⋅⋅*Langage type assembleur simpliste 
-⋅⋅*Rendu visuel 
+⋅⋅*Simplistic Virtual Machine 
+⋅⋅*Simplistic Assembly-like language
+⋅⋅*Visual reprensentation 
 ## Skills
 ⋅⋅*Group & interpersonal 
 ⋅⋅*Algorithms & AI 

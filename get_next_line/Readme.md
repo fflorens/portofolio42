@@ -1,15 +1,17 @@
 # Get_Next_Line
 
+Also available in [French](Readme.md)
+
 ## Note: 104/100
 
 ## Description
 
-Qu'il s'agisse d'un fichier, de l'entrée standard, ou même plus tard d'une connexion réseau, vous aurez toujours besoin de lire du contenu ligne par ligne. Il est donc temps de vous attaquer à cette fonction, indispensable pour un certain nombre de vos prochains projets.
+Whether it's from a file, the standard input, or even from a network connection later on, you'll need a way to read data one line at a time. Now is the time to write such a function, essential for several of your next projects.
 
 ## Objectives
-⋅⋅*Filedescriptors 
-⋅⋅*Bufferisation 
-⋅⋅*Parsing basique 
+⋅⋅*File descriptors 
+⋅⋅*Buffering 
+⋅⋅*Basic parsing
 ##Skills
 ⋅⋅*Imperative programming 
 ⋅⋅*Rigor 

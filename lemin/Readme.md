@@ -1,14 +1,16 @@
 # Lem_in
 
+Also available in [French](Readme.fr.md)
+
 ## Note: 113/100
 
 ## Description
 
-Votre colonie de fourmis doit se déplacer d'un point à un autre. Mais comment faire pour que cela prenne le moins de temps possible ? Ce projet vous fait découvrir les algorithmes de parcours de graphe : votre programme devra sélectionner intelligemment les chemins et les mouvements précis qui doivent être empruntés par ces fourmis.
+You must move your ant colony from one point to another in the least amount of time. Through this project, you will explore graph traversal algorithms: your program will have to choose the paths and moves to be taken by the ants.
 
 ## Objectives
-⋅⋅*Parcours de graphe 
-⋅⋅*Algorithmes en profondeur 
+⋅⋅*Graph traversal
+⋅⋅*Depth first search
 ## Skills
 ⋅⋅*Imperative programming 
 ⋅⋅*Rigor 
