@@ -1,5 +1,7 @@
 # Zappy
 
+Also available in [English](Readme.md)
+
 ## Note: 115/100
 
 ## Description
@@ -16,4 +18,3 @@ Ce projet est l’aboutissement de vos précédents efforts en UNIX avancé : vo
 ⋅⋅*Adaptation & creativity 
 ⋅⋅*Group & interpersonal 
 ⋅⋅*Organization 
-Also available in [English](Readme.md)

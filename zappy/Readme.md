@@ -1,19 +1,20 @@
 # Zappy
 
-## Note: 115/100
+Also available in [French](Readme.fr.md)
+
+## Grade: 115/100
 
 ## Description
 
-Ce projet est l’aboutissement de vos précédents efforts en UNIX avancé : vous allez ici réaliser un jeu multi-joueurs en réseau TCP/IP. Ce jeu sera constitué d’un serveur gérant le terrain de jeu, d’un client graphique qui affiche l'état du plateau, et de clients IA qui se connectent sur le serveur pour piloter un joueur sur le terrain. C'est un projet très complet qui vous donne l'occasion d'exprimer votre créativité en plus de vos connaissances techniques !
+This project is the culmination of your previous efforts in advanced UNIX: you will create a multiplayer game over the TCP/IP network. This game will consist of a server, a graphical client interface, and AI players. This is a comprehensive project that gives you the opportunity to demonstrate both creativity and technical knowledge!
 
 ## Objectives
-⋅⋅*Protocole TCP/IP 
-⋅⋅*Architecture client/serveur 
-⋅⋅*Interface graphique 
-⋅⋅*Gestion de groupe 
+⋅⋅*TCP/IP protocl
+⋅⋅*Client/Server architecture
+⋅⋅*Graphical interface 
+⋅⋅*Group management 
 ## Skills
 ⋅⋅*Unix 
 ⋅⋅*Adaptation & creativity 
 ⋅⋅*Group & interpersonal 
 ⋅⋅*Organization 
-Also available in [English](Readme.md)

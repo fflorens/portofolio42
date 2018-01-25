@@ -1,5 +1,7 @@
 # LibftASM
 
+Also available in [English](Readme.md)
+
 ## Note: 110/100
 
 ## Description
@@ -13,4 +15,3 @@ Ce projet a pour but de vous faire coder une minilib en ASM, en recodant quelque
 ⋅⋅*Imperative programming 
 ⋅⋅*Rigor 
 ⋅⋅*Algorithms & AI 
-Also available in [English](Readme.md)

@@ -1,5 +1,7 @@
 # Nm-otool
 
+Also available in [English](Readme.md)
+
 ## Note: 124/100
 
 ## Description
@@ -14,4 +16,3 @@ Décortiquez le format des exécutables MacOS et comprenez comment le kernel lan
 ## Skills
 ⋅⋅*Unix 
 ⋅⋅*Rigor 
-Also available in [English](Readme.md)

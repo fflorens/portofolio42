@@ -1,16 +1,17 @@
 # Philosophers
 
-## Note: 113/100
+Also available in [French](Readme.fr.md)
+
+## Grade: 113/100
 
 ## Description
 
-Comment gérer l’accès concurrentiel de plusieurs processus à des ressources partagées ? Ce projet vous initialise aux problématiques de la programmation parallèle via le fameux problème du « diner des philosophes ».
+How to handle concurrent access of multiple processes to shared resources? This project introduces you to the problematics of parallel programming via the famous problem of the "dining philosophers".
 
 ## Objectives
 ⋅⋅*Threads 
-⋅⋅*Utilisation de mutexes 
+⋅⋅*Mutex's usage 
 ## Skills
 ⋅⋅*Parallel computing 
 ⋅⋅*Unix 
 ⋅⋅*Rigor 
-Also available in [English](Readme.md)

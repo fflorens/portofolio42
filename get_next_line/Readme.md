@@ -1,8 +1,8 @@
 # Get_Next_Line
 
-Also available in [French](Readme.md)
+Also available in [French](Readme.fr.md)
 
-## Note: 104/100
+## Grade: 104/100
 
 ## Description
 

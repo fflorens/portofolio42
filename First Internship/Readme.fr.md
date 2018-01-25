@@ -1,7 +1,8 @@
 # First Internship
 
-## Note: 111/100
+Also available in [English](Readme.md)
 
+## Note: 111/100
 
 ## Description
 
@@ -15,4 +16,3 @@ Ce premier pas en entreprise est un passage important de votre cursus 42. Ce sta
 ⋅⋅*Contraintes de production
 ## Skills
 ⋅⋅*Company experience
-Also available in [English](Readme.md)

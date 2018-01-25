@@ -1,5 +1,7 @@
 # Philosophers
 
+Also available in [English](Readme.md)
+
 ## Note: 113/100
 
 ## Description
@@ -13,4 +15,3 @@ Comment gérer l’accès concurrentiel de plusieurs processus à des ressources
 ⋅⋅*Parallel computing 
 ⋅⋅*Unix 
 ⋅⋅*Rigor 
-Also available in [English](Readme.md)

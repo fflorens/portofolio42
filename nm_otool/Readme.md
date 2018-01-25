@@ -1,17 +1,18 @@
 # Nm-otool
 
-## Note: 124/100
+Also available in [French](Readme.fr.md)
+
+## Grade: 124/100
 
 ## Description
 
-Décortiquez le format des exécutables MacOS et comprenez comment le kernel lance les binaires, en ré-écrivant ces deux outils du système. Indispensable pour tous ceux qui voudront faire de la sécurité, ce projet est plus généralement une ouverture sur la culture UNIX système.
+Dig into the format of the MacOS executables and discover how the kernel launches binaries, by rewriting these two system utilities. Essential for all those who want to work in cybersecurity, this project is more generally an introduction to the culture of the UNIX system.
 
 ## Objectives
-⋅⋅*Format Mach-O 
+⋅⋅*Mach-O format
 ⋅⋅*Sections 
-⋅⋅*Bibliothèques dynamiques 
-⋅⋅*Table des symboles 
+⋅⋅*Dynamic libraries 
+⋅⋅*Symbol tables 
 ## Skills
 ⋅⋅*Unix 
 ⋅⋅*Rigor 
-Also available in [English](Readme.md)

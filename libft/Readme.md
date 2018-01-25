@@ -2,7 +2,7 @@
 
 Also available in [French](Readme.fr.md)
 
-## Note: 107/100
+## Grade: 107/100
 
 ## Description
 

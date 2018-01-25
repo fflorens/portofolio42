@@ -2,17 +2,17 @@
 
 Also available in [French](Readme.fr.md)
 
-## Note: 125/100
+## Grade: 125/100
 
 ## Description
 
-This project goal is to create a virtual arena, where programs written in a simplistic language will battle each other. You will approach the design of a VM (with instruction she can handle, the register, etc), and the issues related to compiling an assembly language in bytecode. With, as a bonus, the pleasure of seeing your champions compete in your arena !
+Create a virtual arena where programs written in a simple language fight one another. Explore the design of a VM (with the relevant instructions, records, etc.) and challenges related to compiling an assembly language in byte-code. As a bonus, you'll be able to enjoy programming your heroes to win the arena battles. Let the building begin and let the best hero win!
 
 ## Objectives
 ⋅⋅*Compilation 
-⋅⋅*Simplistic Virtual Machine 
-⋅⋅*Simplistic Assembly-like language
-⋅⋅*Visual reprensentation 
+⋅⋅*Simple virtual machine 
+⋅⋅*Simple assembly language
+⋅⋅*Visual render 
 ## Skills
 ⋅⋅*Group & interpersonal 
 ⋅⋅*Algorithms & AI 

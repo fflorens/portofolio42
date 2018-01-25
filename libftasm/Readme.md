@@ -1,16 +1,17 @@
 # LibftASM
 
-## Note: 110/100
+Also available in [French](Readme.fr.md)
+
+## Grade: 110/100
 
 ## Description
 
-Ce projet a pour but de vous faire coder une minilib en ASM, en recodant quelques fonctions basiques de la libc. A la fin de ce projet vous serez familiarisés avec la syntaxe du langage, le fonctionnement de la stack, mais aussi le comportement du compilateur. Absolument indispensable pour continuer sur les projets de sécurité.
+This project requires you to make a mini-lib in ASM, repeating the functionality of the selected libc functions. At the end of this project, you will be familiar with the assembly language syntax, the operations of the stack, and the behavior of the compiler. This is absolutely essential to get access to the security projects as well as system administration.
 
 ## Objectives
-⋅⋅*Bases d'ASM 64 bits 
-⋅⋅*Syntaxe Intel 
+⋅⋅*X64 ASM Bases 
+⋅⋅*Intel syntax
 ## Skills
 ⋅⋅*Imperative programming 
 ⋅⋅*Rigor 
 ⋅⋅*Algorithms & AI 
-Also available in [English](Readme.md)
